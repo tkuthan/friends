@@ -1,0 +1,9 @@
+.idea
+*.iml
+**/target
+*.project
+*.settings
+*.classpath
+docker-logs/*
+!docker-logs/.keep
+env
