@@ -104,7 +104,7 @@ object FriendsApp {
 /**
   * Represent one person entry
   *
-  * @param name    Name, unique accross the whole dataset
+  * @param name    Name, unique across the whole dataset
   * @param money   Money, non-negative Integer
   * @param friends Array of friends of the user
   */
@@ -134,7 +134,7 @@ object AsInt {
     try {
       Some(s.toLong)
     } catch {
-      case e: NumberFormatException => None
+      case _: NumberFormatException => None
     }
   }
 }
