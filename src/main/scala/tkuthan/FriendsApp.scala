@@ -5,7 +5,8 @@ import org.apache.spark.sql.{Dataset, SparkSession}
 
 import scala.util.matching.Regex
 
-/**
+/** Friends app - a big data homework
+  * @example spark-submit --class tkuthan.FriendsApp target/friends-0.0.1-SNAPSHOT.jar data/friends.csv
   * @todo stress test
   * @todo consider broadcast hash join
   */
@@ -49,7 +50,7 @@ object FriendsApp {
   }
 
   /**
-    * Given a a dataset of people and sum of money of their friends,
+    * Given a dataset of people and sum of money of their friends,
     * returns an array of people with richest friends
     *
     * @param summed Dataset(NameMoney(name, sum_of_friends_money))
